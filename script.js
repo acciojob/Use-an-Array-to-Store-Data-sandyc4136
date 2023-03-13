@@ -1,8 +1,11 @@
- var yourArray=['sandip', 'chhetry', 24, "before each", "should contain string", true];
+ var yourArray=[
+				 [{ arr1 : 'sandip'}],
+				 [{arr2 : 'chhetry'}],
+				 [{ arr3 : 24}],
+				 [{ arr4 : "before each"}], 
+				 [{ arr5 : "should contain string" }],
+				 [{arr6:true }]
+			   ];
+
 
 // Add each element of yourArray to the unordered list in the HTML
-for (let i = 0; i < yourArray.length; i++) {
-  let listItem = document.createElement('li');
-  listItem.textContent = yourArray[i];
-  document.getElementById('list').appendChild(listItem);
-}
